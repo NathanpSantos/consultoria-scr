@@ -15,8 +15,6 @@
         <div class="header-top">
             <div class="logo-central">
                 <img src="img/logo.png" alt="SC Strategy Consulting">
-                <span class="nome-consultor">Rogério Rodrigues Santos</span>
-                <span class="tagline">Estratégia & Marketing de Alto Impacto</span>
             </div>
             <div class="header-social">
                 <a href="https://wa.me/5511998991210" target="_blank" title="WhatsApp">
@@ -42,7 +40,6 @@
         </nav>
         <div class="header-hero">
             <div class="plus-overlay"></div>
-            <img src="img/logo.png" class="logo-watermark" alt="Logo Marca d'água">
             <div class="hero-content">
                 <h1>Transforme seus resultados com Estratégia & Tecnologia</h1>
                 <p>Consultoria de marketing inovadora para empresas que querem crescer no mundo digital.</p>
@@ -52,55 +49,143 @@
     </header>
     
     <section class="sobre" id="sobre">
-        <div class="container">
-            <div class="sobre-conteudo">
+        <div class="container sobre-flex">
+            <div class="sobre-foto-area">
                 <img src="img/foto-profissional.png" alt="Foto do Consultor" class="sobre-foto">
-                <div>
-                    <h2>Quem sou</h2>
-                    <p>Com quase 40 anos de experiência consolidada em liderança de equipes e desenvolvimento de estratégias inovadoras de marketing e vendas para grandes empresas, possuo um histórico comprovado de geração de resultados significativos.
-                        Minha trajetória profissional me proporcionou sólida experiência em marketing digital, planejamento estratégico, growth marketing, gestão de marca, customer experience e inteligência de mercado. No meu papel mais recente como Gerente Sênior de Marketing, Comunicação Interna e Inteligência de Mercado de empresa de grande porte no segmento de serviços, liderei por quase 20 anosa área de Marketing e Inteligência de Mercado, gerenciando diversas unidades de negócios e uma base de 1.200 clientes B2B, com um faturamento anual de R$ 850 milhões. Durante este período, fui responsável por um aumento de 42% no market share e a implementação de estratégias de Customer Success (CS) e Customer Experience (CX) que resultaram em um aumento de 64% no índice de fidelização de clientes e um crescimento de 30% na receita recorrente.
-                        Sou um entusiasta da inovação e da tecnologia, e demonstrei isso ao introduzir ferramentas de Inteligência Artificial nos processos de Marketing e Vendas. Além disso, minhas iniciativas de Inbound e Outbound Marketing impulsionaram um crescimento de 47% nos leads qualificados para a área comercial, e a otimização de campanhas de mídia On e Offline resultou em um ROI 35% superior. A experiência em gerenciamento de projetos, análise de dados e métricas de marketing, e a implementação de sistemas CRM/ERP complementam minha capacidade de otimizar a gestão de clientes e dados.
-                        Na Editora na qual trabalhei, como Supervisor Comercial e Marketing, liderei uma equipe de quase 70 pessoas e obtive um crescimento anual de 35% na receita de vendas, um aumento de 42% na carteira de novos clientes e elevei o índice de satisfação do cliente para 96%. Fui responsável por desenvolver o projeto de Jornada do Cliente, equivalente às atuais estratégias de Customer Success (CS) e Customer Experience (CX), e por coordenar a comercialização de produtos via web, promoções, eventos e captação de leads.
-                        Minha formação inclui um MBA em Marketing pela FGV, especializações em Marketing Digital, Planejamento Estratégico, Growth, Gestão de Marca e Customer Experience, e Graduação em Publicidade e Propaganda pela UNIP. Possuo também conhecimento em softwares como Illustrator, Corel Draw, Photoshop e In Design, além de experiência com sistemas BI, CRM e ERP (TOTVS).
-                        Estou confiante de que minhas habilidades de liderança, visão estratégica e histórico de sucesso em marketing e vendas me qualificam para contribuir significativamente para o crescimento e o sucesso de empresas de diversos segmentos. 
-                        Conte comigo. Vamos conversar?   
-                    </p>
-                </div>
+            </div>
+            <div class="sobre-conteudo-area">
+                <h2 class="sobre-titulo">Quem sou</h2>
+                <h3 class="sobre-headline">Especialista em Estratégia, Marketing e Inovação para empresas que querem crescer de verdade</h3>
+                <p>
+                    Com quase 40 anos de experiência consolidada em liderança de equipes e desenvolvimento de estratégias inovadoras de marketing e vendas para grandes empresas, possuo um histórico comprovado de geração de resultados significativos.<br><br>
+                    Minha trajetória inclui sólida atuação em marketing digital, planejamento estratégico, growth, gestão de marca, customer experience, inteligência de mercado e implementação de tecnologias inovadoras como Inteligência Artificial para potencializar resultados.<br><br>
+                    Nos últimos anos, liderei áreas de Marketing e Inteligência de Mercado em empresas de grande porte, sendo responsável por aumento expressivo de market share, crescimento de receita recorrente, estratégias vencedoras de Customer Success (CS) e Customer Experience (CX), além de resultados em projetos digitais e comerciais.<br><br>
+                    Minha missão é transformar empresas e negócios com soluções estratégicas, criatividade e visão orientada a resultados. Conheça meu trabalho e descubra como posso ajudar sua empresa a alcançar um novo patamar!
+                </p>
+                <ul class="sobre-lista-destaque">
+                    <li><strong>Marketing Digital</strong> & Planejamento Estratégico</li>
+                    <li><strong>Growth Marketing</strong> & Customer Experience</li>
+                    <li>Gestão de Marca & Comunicação Corporativa</li>
+                    <li>Implementação de IA & Inovação</li>
+                    <li>Projetos para grandes empresas (faturamento > R$ 850mi)</li>
+                    <li>MBA FGV, Especializações em Marketing e BI</li>
+                </ul>
+                <a href="contato.html" class="cta">Converse comigo</a>
             </div>
         </div>
     </section>
 
+
     <!-- Serviços -->
-    <div class="servicos-lista">
-        <div class="servico-item">
-            <h3>Estratégia de Negócios</h3>
-            <p>Desenvolvimento de estratégias inovadoras para potencializar o crescimento e o posicionamento da sua empresa no mercado.</p>
+    <section class="servicos-destaque">
+        <h2>Conheça Nossos Serviços</h2>
+        <div class="carrossel-nav">
+            <button id="prev">&lt;</button>
+            <div class="carrossel-servicos">
+                
+                <!-- CARD 1 -->
+                <div class="card-servico">
+                    <img src="img/estrategia_negocios.png" alt="Estratégia de Negócios">
+                    <div class="info">
+                        <h3>Estratégia de Negócios</h3>
+                        <p>Desenvolvimento de estratégias inovadoras para crescimento e posicionamento da sua empresa.</p>
+                        <button class="saiba-mais" data-servico="estrategia">Saiba mais</button>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="card-servico">
+                    <img src="img/markenting_midias.png" alt="Marketing">
+                    <div class="info">
+                        <h3>Marketing</h3>
+                        <p>Planejamento e execução de campanhas digitais, focando em resultados reais e mensuráveis.</p>
+                        <button class="saiba-mais" data-servico="marketing">Saiba mais</button>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="card-servico">
+                    <img src="img/midias_sociais.png" alt="Mídias Sociais">
+                    <div class="info">
+                        <h3>Mídias Sociais</h3>
+                        <p>Gestão de redes para engajamento, fortalecimento de marca e geração de leads.</p>
+                        <button class="saiba-mais" data-servico="midias">Saiba mais</button>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="card-servico">
+                    <img src="img/sociais_growth.png" alt="Growth">
+                    <div class="info">
+                        <h3>Growth</h3>
+                        <p>Estratégias para crescimento acelerado, combinando dados, inovação e performance.</p>
+                        <button class="saiba-mais" data-servico="growth">Saiba mais</button>
+                    </div>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="card-servico">
+                    <img src="img/inteligencia_mercado.png" alt="Inteligência de Mercado">
+                    <div class="info">
+                        <h3>Inteligência de Mercado</h3>
+                        <p>Análise de dados, tendências e concorrência para decisões estratégicas.</p>
+                        <button class="saiba-mais" data-servico="inteligencia">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+            <button id="next">&gt;</button>
         </div>
-        <div class="servico-item">
-            <h3>Marketing</h3>
-            <p>Planejamento, execução e análise de campanhas de marketing digital e tradicional, focando em resultados reais.</p>
+        <div class="dica-scroll">Arraste para o lado &rarr;</div>
+
+        <!-- MODAIS DOS SERVIÇOS -->
+        <div class="modal-bg" id="modal-estrategia">
+            <div class="modal">
+                <span class="close">&times;</span>
+                <h3>Estratégia de Negócios</h3>
+                <p>
+                    A consultoria em Estratégia de Negócios desenvolve e implementa planos inovadores para expandir sua empresa, identificar novas oportunidades e se posicionar com destaque no mercado.
+                </p>
+            </div>
         </div>
-        <div class="servico-item">
-            <h3>Mídias Sociais</h3>
-            <p>Gestão profissional de redes sociais para engajamento, branding e geração de leads.</p>
+        <div class="modal-bg" id="modal-marketing">
+            <div class="modal">
+                <span class="close">&times;</span>
+                <h3>Marketing</h3>
+                <p>
+                    Planejamento e execução de campanhas digitais personalizadas, geração de leads qualificados, otimização de funis de vendas e acompanhamento dos resultados para garantir ROI.
+                </p>
+            </div>
         </div>
-        <div class="servico-item">
-            <h3>Growth</h3>
-            <p>Implantação de estratégias de crescimento acelerado, combinando dados, inovação e performance.</p>
+        <div class="modal-bg" id="modal-midias">
+            <div class="modal">
+                <span class="close">&times;</span>
+                <h3>Mídias Sociais</h3>
+                <p>
+                    Gestão completa das suas redes sociais: criação de conteúdo, engajamento com a audiência, análise de dados e estratégias para fortalecer a presença digital da sua marca.
+                </p>
+            </div>
         </div>
-        <div class="servico-item">
-            <h3>Inteligência de Mercado</h3>
-            <p>Análise de dados, tendências e concorrência para orientar decisões estratégicas.</p>
+        <div class="modal-bg" id="modal-growth">
+            <div class="modal">
+                <span class="close">&times;</span>
+                <h3>Growth</h3>
+                <p>
+                    Consultoria focada no crescimento acelerado do seu negócio, utilizando dados, testes A/B, automação de marketing e inovação para aumentar sua receita de forma sustentável.
+                </p>
+            </div>
         </div>
-        <div class="servico-item">
-            <h3>Pesquisa</h3>
-            <p>Coleta e interpretação de informações relevantes para o sucesso do seu negócio.</p>
+        <div class="modal-bg" id="modal-inteligencia">
+            <div class="modal">
+                <span class="close">&times;</span>
+                <h3>Inteligência de Mercado</h3>
+                <p>
+                    Análise avançada de dados do seu setor, identificação de tendências, estudo da concorrência e insights estratégicos para orientar as melhores decisões de negócio.
+                </p>
+            </div>
         </div>
-        <div class="servico-item">
-            <h3>Comunicação Corporativa</h3>
-            <p>Criação e execução de planos de comunicação para fortalecer a imagem institucional da empresa.</p>
-        </div>
-    </div>
+    </section>
+
+
 
 
     <!-- Cases -->
@@ -193,5 +278,6 @@
             <p>&copy; 2025 SC Strategy Consulting. Todos os direitos reservados.</p>
         </div>
     </footer>
+<script src="script.js"></script>
 </body>
 </html>
