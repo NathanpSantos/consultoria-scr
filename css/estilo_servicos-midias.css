@@ -6,6 +6,18 @@ body {
     padding: 0;
 }
 
+.logo-central {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.logo-central img {
+    height: 120px;          /* Pode aumentar para 180px, 200px ou até mais */
+    margin-bottom: 0;       /* Remove espaço abaixo */
+    margin-left: -100px;     /* Puxa a logo ainda mais para a esquerda */
+    display: block;
+}
+
 .header-servico {
     display: flex;
     align-items: center;
