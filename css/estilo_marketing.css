@@ -129,3 +129,10 @@ footer {
     color: #fff7;
     font-size: 1rem;
 }
+
+.logo-servico-img {
+    max-height: 110px;
+    transition: height 0.2s;
+    margin-bottom: 0;       /* Remove espaço abaixo */
+    margin-left: -100px;
+}
