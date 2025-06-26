@@ -80,111 +80,81 @@
     <section class="servicos-destaque">
         <h2>Conheça Nossos Serviços</h2>
         <div class="carrossel-nav">
-            <button id="prev">&lt;</button>
+            <!-- Botão Anterior -->
+            <button id="prev" aria-label="Anterior" class="arrow">
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="12" fill="#fff"/>
+                    <path d="M14.5 7L10 12L14.5 17" stroke="#872d34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            
+            <!-- Container dos cards -->
             <div class="carrossel-servicos">
-                
                 <!-- CARD 1 -->
                 <div class="card-servico">
-                    <img src="img/estrategia_negocios.png" alt="Estratégia de Negócios">
+                    <div class="img-wrapper">
+                        <img src="img/estrategia_negocios.png" alt="Estratégia de Negócios">
+                    </div>
                     <div class="info">
                         <h3>Estratégia de Negócios</h3>
-                        <p>Desenvolvimento de estratégias inovadoras para crescimento e posicionamento da sua empresa.</p>
-                        <button class="saiba-mais" data-servico="estrategia">Saiba mais</button>
+                        <a class="saiba-mais" href="servicos-estrategia.html">Saiba mais</a>
                     </div>
                 </div>
 
                 <!-- CARD 2 -->
                 <div class="card-servico">
-                    <img src="img/markenting_midias.png" alt="Marketing">
+                    <div class="img-wrapper">
+                        <img src="img/markenting_midias.png" alt="Marketing">
+                    </div>
                     <div class="info">
                         <h3>Marketing</h3>
-                        <p>Planejamento e execução de campanhas digitais, focando em resultados reais e mensuráveis.</p>
-                        <button class="saiba-mais" data-servico="marketing">Saiba mais</button>
+                        <a class="saiba-mais" href="servicos-marketing.html">Saiba mais</a>
                     </div>
                 </div>
 
                 <!-- CARD 3 -->
                 <div class="card-servico">
-                    <img src="img/midias_sociais.png" alt="Mídias Sociais">
+                    <div class="img-wrapper">
+                        <img src="img/midias_sociais.png" alt="Mídias Sociais">
+                    </div>
                     <div class="info">
                         <h3>Mídias Sociais</h3>
-                        <p>Gestão de redes para engajamento, fortalecimento de marca e geração de leads.</p>
-                        <button class="saiba-mais" data-servico="midias">Saiba mais</button>
+                        <a class="saiba-mais" href="servicos-midias.html">Saiba mais</a>
                     </div>
                 </div>
 
                 <!-- CARD 4 -->
                 <div class="card-servico">
-                    <img src="img/sociais_growth.png" alt="Growth">
+                    <div class="img-wrapper">
+                        <img src="img/sociais_growth.png" alt="Growth">
+                    </div>
                     <div class="info">
                         <h3>Growth</h3>
-                        <p>Estratégias para crescimento acelerado, combinando dados, inovação e performance.</p>
-                        <button class="saiba-mais" data-servico="growth">Saiba mais</button>
+                        <a class="saiba-mais" href="servicos-growth.html">Saiba mais</a>
                     </div>
                 </div>
 
                 <!-- CARD 5 -->
                 <div class="card-servico">
-                    <img src="img/inteligencia_mercado.png" alt="Inteligência de Mercado">
+                    <div class="img-wrapper">
+                        <img src="img/inteligencia_mercado.png" alt="Inteligência de Mercado">
+                    </div>
                     <div class="info">
                         <h3>Inteligência de Mercado</h3>
-                        <p>Análise de dados, tendências e concorrência para decisões estratégicas.</p>
-                        <button class="saiba-mais" data-servico="inteligencia">Saiba mais</button>
+                        <a class="saiba-mais" href="servicos-inteligencia.html">Saiba mais</a>
                     </div>
                 </div>
             </div>
-            <button id="next">&gt;</button>
+            <!-- Botão Próximo -->
+            <button id="next" aria-label="Próximo" class="arrow">
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="12" fill="#fff"/>
+                    <path d="M10 17L14.5 12L10 7" stroke="#872d34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
         </div>
         <div class="dica-scroll">Arraste para o lado &rarr;</div>
-
-        <!-- MODAIS DOS SERVIÇOS -->
-        <div class="modal-bg" id="modal-estrategia">
-            <div class="modal">
-                <span class="close">&times;</span>
-                <h3>Estratégia de Negócios</h3>
-                <p>
-                    A consultoria em Estratégia de Negócios desenvolve e implementa planos inovadores para expandir sua empresa, identificar novas oportunidades e se posicionar com destaque no mercado.
-                </p>
-            </div>
-        </div>
-        <div class="modal-bg" id="modal-marketing">
-            <div class="modal">
-                <span class="close">&times;</span>
-                <h3>Marketing</h3>
-                <p>
-                    Planejamento e execução de campanhas digitais personalizadas, geração de leads qualificados, otimização de funis de vendas e acompanhamento dos resultados para garantir ROI.
-                </p>
-            </div>
-        </div>
-        <div class="modal-bg" id="modal-midias">
-            <div class="modal">
-                <span class="close">&times;</span>
-                <h3>Mídias Sociais</h3>
-                <p>
-                    Gestão completa das suas redes sociais: criação de conteúdo, engajamento com a audiência, análise de dados e estratégias para fortalecer a presença digital da sua marca.
-                </p>
-            </div>
-        </div>
-        <div class="modal-bg" id="modal-growth">
-            <div class="modal">
-                <span class="close">&times;</span>
-                <h3>Growth</h3>
-                <p>
-                    Consultoria focada no crescimento acelerado do seu negócio, utilizando dados, testes A/B, automação de marketing e inovação para aumentar sua receita de forma sustentável.
-                </p>
-            </div>
-        </div>
-        <div class="modal-bg" id="modal-inteligencia">
-            <div class="modal">
-                <span class="close">&times;</span>
-                <h3>Inteligência de Mercado</h3>
-                <p>
-                    Análise avançada de dados do seu setor, identificação de tendências, estudo da concorrência e insights estratégicos para orientar as melhores decisões de negócio.
-                </p>
-            </div>
-        </div>
     </section>
-
 
 
 
