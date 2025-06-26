@@ -1,0 +1,130 @@
+body {
+    background: #872d34;
+    color: #fff;
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-central {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.logo-central img {
+    height: 120px;          /* Pode aumentar para 180px, 200px ou até mais */
+    margin-bottom: 0;       /* Remove espaço abaixo */
+    margin-left: -100px;     /* Puxa a logo ainda mais para a esquerda */
+    display: block;
+}
+
+
+.header-servico {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #7a222c;
+    padding: 16px 8vw;
+    box-shadow: 0 1px 18px #24040a23;
+}
+
+.header-servico nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.header-servico nav a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.05rem;
+    transition: color 0.15s;
+}
+.header-servico nav a.ativo,
+.header-servico nav a:hover {
+    color: #ffd86a;
+    border-bottom: 2px solid #ffd86a;
+}
+
+.container-servico {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+    max-width: 1080px;
+    margin: 48px auto 36px auto;
+    padding: 32px 5vw;
+    background: #fff;
+    border-radius: 22px;
+    color: #872d34;
+    box-shadow: 0 4px 28px #24040a23;
+}
+.servico-imagem img {
+    max-width: 360px;
+    border-radius: 20px;
+    box-shadow: 0 3px 16px #24040a18;
+}
+.servico-conteudo {
+    flex: 1;
+}
+.servico-conteudo h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.1rem;
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-weight: 900;
+    color: #872d34;
+}
+.servico-conteudo .lead {
+    font-size: 1.13rem;
+    margin-bottom: 14px;
+}
+.btn-servico {
+    display: inline-block;
+    background: linear-gradient(90deg, #872d34 70%, #5e2327 100%);
+    color: #fff;
+    padding: 14px 42px;
+    border-radius: 22px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    text-decoration: none;
+    margin: 18px 0 16px 0;
+    box-shadow: 0 1px 10px #872d3430;
+    transition: background 0.2s, transform 0.18s;
+}
+.btn-servico:hover {
+    background: linear-gradient(90deg, #700F1C 80%, #872d34 100%);
+    color: #fff;
+    transform: scale(1.05) translateY(-2px);
+}
+.servico-conteudo h2 {
+    font-size: 1.18rem;
+    margin-top: 22px;
+    margin-bottom: 12px;
+    color: #872d34;
+}
+.servico-conteudo ul,
+.servico-conteudo ol {
+    margin-left: 24px;
+    font-size: 1.06rem;
+}
+.servico-conteudo li {
+    margin-bottom: 6px;
+}
+@media (max-width: 950px) {
+    .container-servico {
+        flex-direction: column;
+        gap: 26px;
+        padding: 24px 2vw;
+    }
+    .servico-imagem img {
+        max-width: 100%;
+    }
+}
+footer {
+    text-align: center;
+    padding: 24px 0 12px 0;
+    color: #fff7;
+    font-size: 1rem;
+}
