@@ -2,104 +2,62 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estratégia de Negócios | SC Strategy Consulting</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importa o CSS global do site -->
+    <link rel="stylesheet" href="../css/estilo_estrategia-negocios.css">
+    <!-- Google Fonts (opcional) -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- HEADER -->
-    <header class="header-impacto">
-        <div class="header-top">
-            <div class="logo-central">
-                <a href="index.html">
-                    <img src="img/logo.png" alt="SC Strategy Consulting" style="height:60px;">
-                </a>
-            </div>
-            <nav class="menu-principal">
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="cases.html">Cases</a></li>
-                    <li><a href="conteudo.html">Conteúdo</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="header-servico">
+        <a href="../index.html" class="logo-servico">
+            <img src="../img/logo.png" alt="SC Strategy Consulting" height="54">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../sobre.html">Sobre</a></li>
+                <li><a href="../servicos.html" class="ativo">Serviços</a></li>
+                <li><a href="../cases.html">Cases</a></li>
+                <li><a href="../conteudo.html">Conteúdo</a></li>
+                <li><a href="../contato.html">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <!-- DETALHE DO SERVIÇO -->
-    <main>
-        <section class="servico-detalhe">
-            <div class="container">
-                <div class="servico-header">
-                    <img src="img/estrategia_negocios.png" alt="Estratégia de Negócios" class="imagem-servico">
-                    <div>
-                        <h1>Estratégia de Negócios</h1>
-                        <p class="servico-chamada">
-                            Soluções inovadoras para impulsionar o crescimento, transformar resultados e posicionar sua empresa como referência no mercado.
-                        </p>
-                        <a href="contato.html" class="btn-grande">Solicite um orçamento</a>
-                    </div>
-                </div>
-
-                <div class="descricao-servico">
-                    <h2>O que fazemos por você:</h2>
-                    <ul>
-                        <li>Análise completa do seu negócio e do mercado</li>
-                        <li>Diagnóstico de oportunidades e riscos</li>
-                        <li>Plano estratégico personalizado</li>
-                        <li>Definição de metas claras e mensuráveis</li>
-                        <li>Estratégias para aumento de receita e diferencial competitivo</li>
-                    </ul>
-
-                    <h2>Como funciona a consultoria?</h2>
-                    <ol>
-                        <li><b>Diagnóstico Inicial:</b> Reunião para conhecer seu negócio, desafios e objetivos.</li>
-                        <li><b>Análise Profunda:</b> Estudo de mercado, concorrentes e oportunidades.</li>
-                        <li><b>Planejamento Estratégico:</b> Desenvolvimento de um plano detalhado e focado em resultados.</li>
-                        <li><b>Implementação:</b> Acompanhamento e suporte na execução das ações propostas.</li>
-                        <li><b>Monitoramento:</b> Avaliação de resultados, ajustes e novas recomendações.</li>
-                    </ol>
-
-                    <div class="servico-img-exemplo">
-                        <img src="img/exemplo-estrategia.png" alt="Exemplo Estratégia" />
-                        <!-- Troque a imagem por uma de gráficos, equipe ou planejamento (use bancos gratuitos como Unsplash, Pexels etc) -->
-                    </div>
-                </div>
-
-                <aside class="servico-beneficios">
-                    <h3>Benefícios para sua empresa:</h3>
-                    <ul>
-                        <li>Visão clara para decisões estratégicas</li>
-                        <li>Mais competitividade e inovação</li>
-                        <li>Equipe engajada e capacitada</li>
-                        <li>Resultados reais e crescimento sustentável</li>
-                    </ul>
-                </aside>
-
-                <div class="cta-servico" style="text-align:center;margin:42px 0 0 0;">
-                    <a href="contato.html" class="btn-grande">Quero transformar meu negócio</a>
-                </div>
+    <section class="servico-detalhe">
+        <div class="container-servico">
+            <div class="servico-imagem">
+                <img src="../img/estrategia_negocios.png" alt="Estratégia de Negócios">
             </div>
-        </section>
-    </main>
-
-    <!-- RODAPÉ -->
+            <div class="servico-conteudo">
+                <h1>Estratégia de Negócios</h1>
+                <p class="lead">Soluções inovadoras para impulsionar o crescimento, transformar resultados e posicionar sua empresa como referência no mercado.</p>
+                <a href="../contato.html" class="btn-servico">Solicite um orçamento</a>
+                <hr>
+                <h2>O que fazemos por você</h2>
+                <ul>
+                    <li>Análise completa do seu negócio e do mercado</li>
+                    <li>Diagnóstico de oportunidades e riscos</li>
+                    <li>Plano estratégico personalizado</li>
+                    <li>Definição de metas claras e mensuráveis</li>
+                    <li>Estratégias para aumento de receita e diferencial competitivo</li>
+                </ul>
+                <h2>Como funciona a consultoria?</h2>
+                <ol>
+                    <li><b>Diagnóstico Inicial:</b> Reunião para conhecer seu negócio, desafios e objetivos.</li>
+                    <li><b>Análise Profunda:</b> Estudo de mercado, concorrentes e oportunidades.</li>
+                    <li><b>Planejamento Estratégico:</b> Desenvolvimento de um plano detalhado e focado em resultados.</li>
+                    <li><b>Implementação:</b> Acompanhamento e suporte na execução das ações propostas.</li>
+                    <li><b>Monitoramento:</b> Avaliação de resultados, ajustes e novas recomendações.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="container">
             <p>&copy; 2025 SC Strategy Consulting. Todos os direitos reservados.</p>
-            <div style="margin-top:10px;">
-                <a href="https://wa.me/5511998991210" target="_blank" title="WhatsApp">
-                    <img src="img/whatsapp.png" alt="WhatsApp" style="height:22px;">
-                </a>
-                <a href="mailto:prof.roger68@gmail.com" title="E-mail">
-                    <img src="img/email.png" alt="E-mail" style="height:22px;">
-                </a>
-                <a href="https://www.linkedin.com/in/rogerio-rodrigues-2423301a/" target="_blank" title="LinkedIn">
-                    <img src="img/linkedin.png" alt="LinkedIn" style="height:22px;">
-                </a>
-            </div>
         </div>
     </footer>
 </body>

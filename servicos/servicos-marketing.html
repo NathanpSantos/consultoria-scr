@@ -2,87 +2,58 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketing | SC Strategy Consulting</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS padronizado igual ao da outra tela -->
+    <link rel="stylesheet" href="../css/estilo_marketing.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- HEADER -->
-    <header class="header-impacto">
-        <div class="header-top">
-            <div class="logo-central">
-                <a href="index.html">
-                    <img src="img/logo.png" alt="SC Strategy Consulting" style="height:60px;">
-                </a>
-            </div>
-            <nav class="menu-principal">
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="cases.html">Cases</a></li>
-                    <li><a href="conteudo.html">Conteúdo</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="header-servico">
+        <a href="../index.html" class="logo-servico">
+            <img src="../img/logo.png" alt="SC Strategy Consulting" height="54">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../sobre.html">Sobre</a></li>
+                <li><a href="../servicos.html" class="ativo">Serviços</a></li>
+                <li><a href="../cases.html">Cases</a></li>
+                <li><a href="../conteudo.html">Conteúdo</a></li>
+                <li><a href="../contato.html">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <main>
-        <section class="servico-detalhe">
-            <div class="container">
-                <div class="servico-header">
-                    <img src="img/markenting_midias.png" alt="Marketing Digital" class="imagem-servico">
-                    <div>
-                        <h1>Marketing</h1>
-                        <p class="servico-chamada">
-                            Campanhas inteligentes e estratégicas para transformar seu alcance em resultados reais, leads e vendas.
-                        </p>
-                        <a href="contato.html" class="btn-grande">Solicite um orçamento</a>
-                    </div>
-                </div>
-
-                <div class="descricao-servico">
-                    <h2>Nossos serviços de Marketing incluem:</h2>
-                    <ul>
-                        <li>Criação e gestão de campanhas digitais (Google Ads, Facebook Ads, LinkedIn Ads)</li>
-                        <li>Planejamento de marketing digital completo</li>
-                        <li>SEO, Inbound Marketing e geração de leads qualificados</li>
-                        <li>Gestão de conteúdo e estratégias de engajamento</li>
-                        <li>Análise de resultados, métricas e ROI</li>
-                    </ul>
-
-                    <h2>Como funciona?</h2>
-                    <ol>
-                        <li><b>Briefing:</b> Entendimento dos objetivos da sua empresa e público-alvo</li>
-                        <li><b>Planejamento:</b> Definição de estratégias, canais e cronograma</li>
-                        <li><b>Execução:</b> Lançamento e gestão de campanhas</li>
-                        <li><b>Monitoramento:</b> Ajustes constantes e otimização dos resultados</li>
-                        <li><b>Relatórios:</b> Envio de resultados detalhados e próximos passos</li>
-                    </ol>
-
-                    <div class="servico-img-exemplo">
-                        <img src="img/exemplo-marketing.png" alt="Marketing Digital">
-                    </div>
-                </div>
-
-                <aside class="servico-beneficios">
-                    <h3>Benefícios:</h3>
-                    <ul>
-                        <li>Mais visibilidade online</li>
-                        <li>Geração de leads e oportunidades de vendas</li>
-                        <li>Redução de custos e melhor retorno sobre investimento</li>
-                        <li>Posicionamento da marca no digital</li>
-                    </ul>
-                </aside>
-
-                <div class="cta-servico" style="text-align:center;margin:42px 0 0 0;">
-                    <a href="contato.html" class="btn-grande">Quero vender mais com Marketing</a>
-                </div>
+    <section class="servico-detalhe">
+        <div class="container-servico">
+            <div class="servico-imagem">
+                <img src="../img/marketing_midias.png" alt="Marketing">
             </div>
-        </section>
-    </main>
-
+            <div class="servico-conteudo">
+                <h1>Marketing</h1>
+                <p class="lead">Crie conexões verdadeiras com seu público e aumente seu alcance, reputação e resultados com estratégias de marketing digital inovadoras.</p>
+                <a href="../contato.html" class="btn-servico">Solicite um orçamento</a>
+                <hr>
+                <h2>O que fazemos por você</h2>
+                <ul>
+                    <li>Planejamento e execução de campanhas digitais</li>
+                    <li>Gestão de redes sociais e conteúdo</li>
+                    <li>Estratégias para aumentar engajamento e geração de leads</li>
+                    <li>Posicionamento e fortalecimento de marca</li>
+                    <li>Análise de métricas e otimização de resultados</li>
+                </ul>
+                <h2>Como funciona nosso marketing?</h2>
+                <ol>
+                    <li><b>Diagnóstico:</b> Análise do cenário atual e oportunidades digitais.</li>
+                    <li><b>Estratégia:</b> Definição dos melhores canais, público e mensagem.</li>
+                    <li><b>Execução:</b> Produção de conteúdo, campanhas e gerenciamento diário.</li>
+                    <li><b>Otimização:</b> Monitoramento das ações e ajustes constantes para maximizar o ROI.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="container">
             <p>&copy; 2025 SC Strategy Consulting. Todos os direitos reservados.</p>
