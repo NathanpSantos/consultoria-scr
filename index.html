@@ -265,14 +265,35 @@
 
     <section class="contato">
         <div class="container">
-            <h2>Contato</h2>
-            <form class="form-contato" action="mailto:prof.roger68@gmail.com" method="POST" enctype="text/plain">
-                <input type="text" name="nome" placeholder="Seu nome" required>
-                <input type="text" name="whatsapp" placeholder="WhatsApp">
-                <input type="email" name="email" placeholder="Seu e-mail" required>
-                <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-                <button type="submit">Enviar mensagem</button>
-            </form>
+            <h2 class="contato-titulo">Contato</h2>
+            <div class="contato-decor-wrapper">
+                <!-- Imagem esquerda -->
+                <img src="img/contato-lateral.png" alt="Decorativo" class="contato-img decor-esq">
+
+                <!-- Bloco central do contato -->
+                <div class="contato-central">
+                    <form class="form-contato">
+                        <div class="input-group">
+                            <img src="img/user.svg" alt="Nome" class="input-icon">
+                            <input type="text" placeholder="Seu nome" required>
+                        </div>
+                        <div class="input-group">
+                            <img src="img/whatsapp.svg" alt="WhatsApp" class="input-icon">
+                            <input type="text" placeholder="WhatsApp">
+                        </div>
+                        <div class="input-group">
+                            <img src="img/email.svg" alt="E-mail" class="input-icon">
+                            <input type="email" placeholder="Seu e-mail" required>
+                        </div>
+                        <div class="input-group">
+                            <img src="img/message.svg" alt="Mensagem" class="input-icon">
+                            <textarea placeholder="Sua mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-contato">Enviar mensagem</button>
+                    </form>
+                </div>
+                <!-- Imagem direita -->
+                <img src="img/contato-lateral.png" alt="Decorativo" class="contato-img decor-dir">
             </div>
         </div>
     </section>
