@@ -707,7 +707,7 @@ body {
 }
 
 .btn-contato {
-    background: linear-gradient(90deg, #872d34 70%, #ffd86a 120%);
+    background:#872d34;
     color: #fff;
     padding: 15px 0;
     border: none;
@@ -715,13 +715,11 @@ body {
     font-size: 1.1rem;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 2px 12px #872d3422;
-    transition: background 0.2s, color 0.2s;
 }
 
 .btn-contato:hover {
-    background: linear-gradient(90deg, #700f1c 70%, #ffd86a 120%);
-    color: #fffde6;
+    background:#700f1c;
+    color: #ffffff;
 }
 
 /* --- Responsivo --- */
@@ -771,15 +769,11 @@ body {
     background: #fff;
     border-radius: 14px;
     box-shadow: 0 1px 7px #872d340c;
-    border: 1.7px solid #ffd86a22;
     padding: 0 13px;
     margin-bottom: 4px;
     transition: border-color 0.2s;
 }
-.input-group:focus-within {
-    border-color: #ffd86a;
-    box-shadow: 0 0 0 2px #ffd86a44;
-}
+
 .input-icon {
     width: 26px;
     margin-right: 8px;
@@ -809,7 +803,7 @@ body {
 }
 
 .btn-contato {
-    background: linear-gradient(90deg, #872d34 75%, #ffd86a 100%);
+    background:#872d34;
     color: #fff;
     border: none;
     border-radius: 24px;
@@ -822,7 +816,6 @@ body {
     transition: background 0.18s, color 0.18s, transform 0.15s;
 }
 .btn-contato:hover {
-    background: linear-gradient(90deg, #ffd86a 60%, #872d34 100%);
     color: #872d34;
     transform: scale(1.04);
 }
