@@ -1,21 +1,35 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Sobre | SC Strategy Consulting</title>
+    <title>Sobre Nós | SC Strategy Consulting</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo"><a href="index.html"><img src="img/logo.png" alt="SC Strategy Consulting"></a></div>
-            <nav>
-                <ul>
+    <header class="header-topo">
+        <div class="container-menu">
+            <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="SC Strategy Consulting" class="logo-img">
+            </a>
+            <nav class="nav-central">
+                <ul class="menu-lista">
                     <li><a href="index.html">Início</a></li>
                     <li><a href="sobre.html" class="active">Sobre</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
+                    <li class="menu-servicos">
+                        <a href="##" class="ativo">Serviços</a>
+                        <ul class="submenu-servicos">
+                            <li><a href="servicos/servicos-estrategia.html">Estratégia de Negócios</a></li>
+                            <li><a href="servicos/servicos-marketing.html">Marketing</a></li>
+                            <li><a href="servicos/servicos-midias.html">Mídias Sociais</a></li>
+                            <li><a href="servicos/servicos-growth.html">Growth</a></li>
+                            <li><a href="servicos/servicos-inteligencia.html">Inteligência de Mercado</a></li>
+                            <li><a href="servicos/servicos-pesquisa.html">Pesquisa</a></li>
+                            <li><a href="servicos/comunicacao-corporativa.html">Comunicação Corporativa</a></li>   
+                        </ul>
+                    </li>
                     <li><a href="cases.html">Cases</a></li>
                     <li><a href="conteudo.html">Conteúdo</a></li>
                     <li><a href="contato.html">Contato</a></li>
@@ -23,31 +37,84 @@
             </nav>
         </div>
     </header>
-    <section class="fundo-cinza">
-        <div class="container">
-            <h2>Quem Sou</h2>
-            <div class="sobre-conteudo">
-                <img src="img/foto-profissional.jpg" class="sobre-foto" alt="Consultor">
-                <div>
-                    <h3>Consultoria com experiência real de mercado</h3>
-                    <p>
-                        Olá! Sou ex-gerente de marketing, com mais de 15 anos de atuação em grandes empresas, apaixonado por transformar desafios em resultados.
-                        <br><br>
-                        Minha missão é ajudar pequenas e médias empresas a alcançar seu potencial máximo através de estratégias de marketing, vendas e inovação digital, com soluções sob medida para cada cliente.
-                        <br><br>
-                        Aqui você vai encontrar atendimento personalizado, visão estratégica e compromisso com resultados reais.
-                    </p>
-                </div>
+
+
+    <section class="quem-somos-bg">
+        <div class="quem-somos-container">
+            <div class="quem-somos-conteudo">
+                <h1>Quem Somos</h1>
+                <h2>Transformando desafios em resultados reais</h2>
+                <p>
+                  A <b>SC Strategy Consulting</b> é formada por especialistas apaixonados por resultados, com experiência nas áreas de estratégia, marketing, vendas, tecnologia e inovação.  
+                  Atuamos junto a empresas que querem crescer, inovar e liderar seus mercados.
+                </p>
+                <ul>
+                  <li>+15 anos de experiência no mercado nacional e internacional</li>
+                  <li>Equipe multidisciplinar e certificada</li>
+                  <li>Soluções personalizadas, consultorias e treinamentos</li>
+                  <li>Foco em resultados práticos, inovação e relacionamento próximo</li>
+                </ul>
+            </div>
+            <div class="quem-somos-video">
+                <!-- Video institucional (YouTube ou arquivo local) -->
+                <iframe width="360" height="220" src="https://www.youtube.com/embed/YOUTUBE_ID_AQUI" frameborder="0"
+                  allowfullscreen title="Vídeo Institucional SC Consulting"></iframe>
             </div>
         </div>
     </section>
+
+    <!-- Apresentação do Time -->
+    <section class="time-sc">
+      <div class="container">
+        <h2 class="titulo-time">Nosso Time</h2>
+        <div class="cards-time">
+          <div class="card-membro">
+            <img src="img/time1.png" alt="Rogerio Rodrigues">
+            <h3>Rogério Rodrigues</h3>
+            <p>Gerente de Markenting</p>
+          </div>
+          <div class="card-membro">
+            <img src="img/time2.jpg" alt="Nome do Consultor">
+            <h3>João Santos</h3>
+            <p>Especialista em Marketing Digital</p>
+          </div>
+          <div class="card-membro">
+            <img src="img/time3.jpg" alt="Nome do Consultor">
+            <h3>Ana Lima</h3>
+            <p>Gestora de Projetos</p>
+          </div>
+          <!-- Adicione mais membros conforme sua equipe -->
+        </div>
+      </div>
+    </section>
+    
+    <!-- Missão, Visão, Valores (opcional, mas valoriza) -->
+    <section class="missoes-bg">
+      <div class="missoes-container">
+        <div>
+          <h3>Missão</h3>
+          <p>Potencializar resultados e transformar negócios com soluções estratégicas e personalizadas.</p>
+        </div>
+        <div>
+          <h3>Visão</h3>
+          <p>Ser referência nacional em consultoria estratégica, reconhecida pela inovação e foco em resultados.</p>
+        </div>
+        <div>
+          <h3>Valores</h3>
+          <p>Ética, compromisso, inovação, transparência e parceria.</p>
+        </div>
+      </div>
+    </section>
+
     <footer>
-        <div class="container">
-            <p>&copy; 2025 SC Strategy Consulting. Todos os direitos reservados.</p>
+        <div class="footer-content">
+            <div class="footer-copyright">
+                © 2025 SC Strategy Consulting. Todos os direitos reservados.
+            </div>
             <div class="redes">
-                <a href="#"><img src="img/whatsapp.png" alt="WhatsApp" style="height:22px;"></a>
-                <a href="#"><img src="img/linkedin.png" alt="LinkedIn" style="height:22px;"></a>
-                <a href="#"><img src="img/instagram.png" alt="Instagram" style="height:22px;"></a>
+                <a href="https://wa.me/5511998991210"><img src="img/whatsapp.png" alt="WhatsApp"></a>
+                <a href="https://www.linkedin.com/company/strategy-consulting-brasil/posts/?feedView=all"><img src="img/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
             </div>
         </div>
     </footer>

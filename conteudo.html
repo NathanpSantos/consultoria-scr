@@ -2,17 +2,20 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Conteúdo | SC Strategy Consulting</title>
+    <title>Conteúdo & Dicas | SC Strategy Consulting</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo"><a href="index.html"><img src="img/logo.png" alt="SC Strategy Consulting"></a></div>
-            <nav>
-                <ul>
+    <!-- Header padrão -->
+    <header class="header-topo">
+        <div class="container-menu">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="SC Strategy Consulting" class="logo-img">
+            </a>
+            <nav class="nav-central">
+                <ul class="menu-lista">
                     <li><a href="index.html">Início</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="servicos.html">Serviços</a></li>
@@ -23,29 +26,44 @@
             </nav>
         </div>
     </header>
-    <section class="fundo-branco">
-        <div class="container">
-            <h2>Conteúdo & Dicas</h2>
-            <div class="conteudo-lista">
-                <div class="conteudo-item">
-                    <h4><a href="artigo-exemplo.html">Como criar estratégias de marketing eficientes</a></h4>
+
+    <!-- Seção de Conteúdo -->
+    <section class="conteudo-bg">
+        <div class="conteudo-container">
+            <h1 class="conteudo-titulo">Conteúdo & Dicas</h1>
+            <div class="conteudo-cards">
+                <div class="conteudo-card">
+                    <h2>
+                        <a href="#">Como criar estratégias de marketing eficientes</a>
+                    </h2>
                     <p>Dicas práticas para impulsionar seus resultados com planejamento.</p>
                 </div>
-                <div class="conteudo-item">
-                    <h4><a href="artigo-exemplo.html">Erros comuns em vendas e como evitar</a></h4>
+                <div class="conteudo-card">
+                    <h2>
+                        <a href="#">Erros comuns em vendas e como evitar</a>
+                    </h2>
                     <p>Saiba onde sua empresa pode melhorar e vender mais!</p>
                 </div>
-                <!-- Adicione outros artigos com <a href="artigo-exemplo.html">Título</a> -->
+                <div class="conteudo-card">
+                    <h2>
+                        <a href="#">Como usar inteligência de mercado</a>
+                    </h2>
+                    <p>Entenda como a inteligência de mercado pode transformar o seu negócio.</p>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- Footer padrão -->
     <footer>
-        <div class="container">
-            <p>&copy; 2025 SC Strategy Consulting. Todos os direitos reservados.</p>
+        <div class="footer-content">
+            <div class="footer-copyright">
+                © 2025 SC Strategy Consulting. Todos os direitos reservados.
+            </div>
             <div class="redes">
-                <a href="#"><img src="img/whatsapp.png" alt="WhatsApp" style="height:22px;"></a>
-                <a href="#"><img src="img/linkedin.png" alt="LinkedIn" style="height:22px;"></a>
-                <a href="#"><img src="img/instagram.png" alt="Instagram" style="height:22px;"></a>
+                <a href="#"><img src="img/whatsapp.png" alt="WhatsApp"></a>
+                <a href="#"><img src="img/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
             </div>
         </div>
     </footer>

@@ -8,11 +8,13 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo"><a href="index.html"><img src="img/logo.png" alt="SC Strategy Consulting"></a></div>
-            <nav>
-                <ul>
+    <header class="header-topo">
+        <div class="container-menu">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="SC Strategy Consulting" class="logo-img">
+            </a>
+            <nav class="nav-central">
+                <ul class="menu-lista">
                     <li><a href="index.html">Início</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="servicos.html">Serviços</a></li>
@@ -23,30 +25,55 @@
             </nav>
         </div>
     </header>
-    <section class="fundo-cinza">
-        <div class="container">
-            <h2>Fale comigo</h2>
-            <form class="form-contato" action="https://formspree.io/f/mrbkyebj" method="POST">
-                <input type="text" name="nome" placeholder="Seu nome" required>
-                <input type="email" name="email" placeholder="Seu e-mail" required>
-                <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-                <button type="submit">Enviar mensagem</button>
-            </form>
-            <div class="contato-info">
-                <p>E-mail: contato@scconsultoria.com</p>
-                <p>WhatsApp: (11) 90000-0000</p>
+
+    <section class="contato-bg">
+        <div class="contato-container">
+            <div class="contato-form-wrapper">
+                <h1 class="contato-titulo">Fale Conosco</h1>
+                <form class="form-contato" action="https://formspree.io/f/mrbkyebj" method="POST" autocomplete="off">
+                    <div class="input-group">
+                        <img src="img/user.png" alt="Nome" class="input-icon">
+                        <input type="text" name="nome" placeholder="Seu nome" required>
+                    </div>
+                    <div class="input-group">
+                        <img src="img/email_contato.png" alt="E-mail" class="input-icon">
+                        <input type="email" name="email" placeholder="Seu e-mail" required>
+                    </div>
+                    <div class="input-group">
+                        <img src="img/whatsapp.png" alt="WhatsApp" class="input-icon">
+                        <input type="text" name="whatsapp" placeholder="WhatsApp (opcional)">
+                    </div>
+                    <div class="input-group">
+                        <img src="img/mensagem.png" alt="Mensagem" class="input-icon">
+                        <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-contato">Enviar mensagem</button>
+                </form>
+                <div class="contato-info">
+                    <p><img src="img/email_contato.png" alt="E-mail" class="contato-icon"> contato@scconsultoria.com</p>
+                    <p><img src="img/whatsapp.png" alt="WhatsApp" class="contato-icon"> (11) 90000-0000</p>
+                    <p><img src="img/linkedin.png" alt="LinkedIn" class="contato-icon"> <a href="#" target="_blank">LinkedIn</a></p>
+                    <p><img src="img/instagram.png" alt="Instagram" class="contato-icon"> <a href="#" target="_blank">@scstrategy</a></p>
+                </div>
+            </div>
+            <div class="contato-side-img">
+                <img src="img/contato-lateral2.png" alt="Consultoria" style="width:270px; max-width:100%;">
             </div>
         </div>
     </section>
+
     <footer>
-        <div class="container">
-            <p>&copy; 2025 SC Strategy Consulting. Todos os direitos reservados.</p>
+        <div class="footer-content">
+            <div class="footer-copyright">
+                © 2025 SC Strategy Consulting. Todos os direitos reservados.
+            </div>
             <div class="redes">
-                <a href="#"><img src="img/whatsapp.png" alt="WhatsApp" style="height:22px;"></a>
-                <a href="#"><img src="img/linkedin.png" alt="LinkedIn" style="height:22px;"></a>
-                <a href="#"><img src="img/instagram.png" alt="Instagram" style="height:22px;"></a>
+                <a href="#"><img src="img/whatsapp.png" alt="WhatsApp"></a>
+                <a href="#"><img src="img/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
             </div>
         </div>
     </footer>
 </body>
 </html>
+
