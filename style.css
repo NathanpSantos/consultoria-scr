@@ -822,6 +822,8 @@ body {
 .footer-contato li,
 .footer-links li {
     margin-bottom: 11px;
+    justify-content: flex-start; /* Alinha tudo à esquerda na coluna */
+    text-align: left;      /* Garante alinhamento à esquerda */
 }
 .footer-contato a,
 .footer-links a {
@@ -832,7 +834,6 @@ body {
     align-items: center;
     gap: 6px;
     font-size: 1.04rem;
-    justify-content: center;       /* Centraliza links com ícone */
 }
 
 .footer-icone {
