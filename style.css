@@ -846,16 +846,13 @@ body {
 
 .footer-btn {
     display: inline-block;
-    background: linear-gradient(90deg, #aca799 70%, #fff 100%);
-    color: #872d34;
+    background: #525150;
     padding: 9px 10px;      /* Botão menor */
     border-radius: 30px;
     font-weight: 700;
     font-size: 1rem;
     text-decoration: none;
     margin-top: 10px;
-    box-shadow: 0 2px 14px #bdbab433;
-    transition: background 0.2s, color 0.2s, transform 0.18s;
 }
 .footer-btn:hover {
     color: #5e2327;
@@ -1028,6 +1025,8 @@ body {
 }
 .quem-somos-conteudo {
   flex: 1;
+  color: #872d34; /* Cor vinho escuro, igual aos cards */
+
 }
 .quem-somos-conteudo h1 {
   font-family: 'Playfair Display', serif;
@@ -1072,50 +1071,8 @@ body {
   }
 }
 
-/* Time */
-.time-sc {
-  background: #fff6f7;
-  padding: 44px 0 26px 0;
-}
-.titulo-time {
-  text-align: center;
-  color: #872d34;
-  font-family: 'Playfair Display', serif;
-  margin-bottom: 22px;
-  font-size: 2rem;
-}
-.cards-time {
-  display: flex;
-  gap: 34px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.card-membro {
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 2px 14px #872d3425;
-  padding: 24px 22px 16px 22px;
-  text-align: center;
-  width: 200px;
-}
-.card-membro img {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 13px;
-  box-shadow: 0 1px 8px #872d3425;
-}
-.card-membro h3 {
-  color: #872d34;
-  margin-bottom: 4px;
-  font-size: 1.13rem;
-}
-.card-membro p {
-  color: #5e2327;
-  font-size: 0.97rem;
-  margin: 0;
-}
+
+
 
 /* Missão Visão Valores */
 .missoes-bg {
@@ -1234,77 +1191,162 @@ body {
     margin: 0;
 }
 
+
+
 /* Seção Conteúdo & Dicas */
+/* ===========================
+   SEÇÃO CONTEÚDO & DICAS - TIMELINE
+   =========================== */
+
 .conteudo-bg {
     background: #fff6f7;
     padding: 60px 0 60px 0;
     min-height: 80vh;
 }
 .conteudo-container {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 24px;
 }
 .conteudo-titulo {
     text-align: center;
     color: #872d34;
     font-family: 'Playfair Display', serif;
     font-size: 2.1rem;
-    margin-bottom: 42px;
-}
-.conteudo-cards {
-    display: flex;
-    gap: 32px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.conteudo-card {
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 0 2px 14px #872d3420;
-    padding: 26px 22px 18px 22px;
-    max-width: 330px;
-    min-width: 250px;
-    flex: 1 1 260px;
-    margin-bottom: 20px;
-    text-align: left;
-    transition: box-shadow 0.18s, transform 0.15s;
-}
-.conteudo-card:hover {
-    box-shadow: 0 6px 32px #872d3430;
-    transform: translateY(-4px) scale(1.03);
-}
-.conteudo-card h2 {
-    margin-bottom: 9px;
-    font-size: 1.13rem;
-}
-.conteudo-card a {
-    color: #872d34;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.18s;
-}
-.conteudo-card a:hover {
-    color: #700f1c;
-    text-decoration: underline;
-}
-.conteudo-card p {
-    color: #5e2327;
-    font-size: 1rem;
-    margin: 0;
+    margin-bottom: 44px;
+    font-weight: 700;
+    letter-spacing: .5px;
 }
 
-@media (max-width: 900px) {
-    .conteudo-cards {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-    .conteudo-card {
-        max-width: 98vw;
-        min-width: unset;
+.timeline-cards {
+    position: relative;
+    margin: 0 auto;
+    padding-left: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+.timeline-cards::before {
+    content: "";
+    position: absolute;
+    left: 13px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #f0e4e6;
+    border-radius: 2px;
+    z-index: 0;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+}
+
+.timeline-dot {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #872d34;
+    border: 4px solid #fff6f7;
+    margin-right: 22px;
+    margin-top: 6px;
+    box-shadow: 0 2px 10px #872d3425;
+    z-index: 2;
+}
+
+.timeline-content {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px #872d3412;
+    padding: 24px 26px 22px 22px;
+    flex: 1;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: box-shadow 0.2s, transform 0.18s;
+}
+.timeline-content:hover {
+    box-shadow: 0 10px 36px #872d3428;
+    transform: translateY(-2px) scale(1.03);
+}
+.timeline-content h3 {
+    color: #872d34;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.19rem;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.timeline-content p {
+    color: #5e2327;
+    font-size: 1.06rem;
+    margin-bottom: 8px;
+}
+.timeline-content a {
+    display: inline-block;
+    background: #706d6d;
+    color: #fff;
+    padding: 10px 26px;
+    border-radius: 22px;
+    font-size: 1.02rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 8px;
+    transition: background 0.17s, color 0.17s, transform 0.13s;
+    letter-spacing: 0.4px;
+    box-shadow: 0 2px 10px #872d3414;
+}
+.timeline-content a:hover {
+    background: #872d34;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+@media (max-width: 700px) {
+    .conteudo-container { padding: 0 6px; }
+    .timeline-cards { padding-left: 13px; gap: 28px; }
+    .timeline-content { padding: 14px 10px 12px 12px; }
+    .timeline-dot { width: 18px; height: 18px; margin-right: 14px; }
+    .conteudo-titulo { font-size: 1.35rem; }
+}
+
+/* Para conteúdo detalhado (página interna) */
+.conteudo-detalhe {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px #872d3412;
+    padding: 28px 34px 24px 34px;
+    margin: 30px auto;
+    color: #5e2327;
+    font-size: 1.08rem;
+    max-width: 650px;
+}
+.conteudo-detalhe ul {
+    margin: 22px 0 0 20px;
+    padding: 0;
+    color: #872d34;
+}
+.conteudo-detalhe li {
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+}
+.conteudo-detalhe strong {
+    color: #872d34;
+}
+@media (max-width: 700px) {
+    .conteudo-detalhe {
+        padding: 13px 7px 12px 7px;
+        font-size: 0.97rem;
+        margin: 18px auto;
     }
 }
+
+
 
 .contato-bg {
     background: #fff6f7;
