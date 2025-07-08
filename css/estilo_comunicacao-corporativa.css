@@ -6,19 +6,7 @@ body {
     padding: 0;
 }
 
-.logo-central {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.logo-central img {
-    height: 120px;          /* Pode aumentar para 180px, 200px ou até mais */
-    margin-bottom: 0;       /* Remove espaço abaixo */
-    margin-left: -100px;     /* Puxa a logo ainda mais para a esquerda */
-    display: block;
-}
-
-
+/* Header */
 .header-servico {
     display: flex;
     align-items: center;
@@ -27,7 +15,10 @@ body {
     padding: 16px 8vw;
     box-shadow: 0 1px 18px #24040a23;
 }
-
+.logo-servico-img {
+    max-height: 90px;
+    margin-left: 0;
+}
 .header-servico nav ul {
     display: flex;
     gap: 20px;
@@ -48,90 +39,96 @@ body {
     border-bottom: 2px solid #ffd86a;
 }
 
-.container-servico {
-    display: flex;
-    align-items: flex-start;
-    gap: 48px;
-    max-width: 1080px;
-    margin: 48px auto 36px auto;
-    padding: 32px 5vw;
+/* Serviço */
+.servico-bg {
+    background: #fff6f7;
+    min-height: 100vh;
+    padding: 50px 0 40px 0;
+}
+.servico-container {
     background: #fff;
-    border-radius: 22px;
-    color: #872d34;
-    box-shadow: 0 4px 28px #24040a23;
+    border-radius: 28px;
+    box-shadow: 0 4px 32px #872d3420;
+    display: flex;
+    gap: 38px;
+    max-width: 1000px;
+    width: 94%;
+    margin: 38px auto 32px auto;
+    padding: 40px;
+    align-items: center;
 }
 .servico-imagem img {
     max-width: 360px;
     border-radius: 20px;
     box-shadow: 0 3px 16px #24040a18;
 }
-.servico-conteudo {
+.servico-info {
     flex: 1;
+    color: #872d34;
 }
-.servico-conteudo h1 {
+.servico-info h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.1rem;
+    color: #872d34;
+    font-size: 2.15rem;
     margin-top: 0;
     margin-bottom: 14px;
     font-weight: 900;
-    color: #872d34;
 }
-.servico-conteudo .lead {
+.servico-info p {
+    color: #872d34;
     font-size: 1.13rem;
     margin-bottom: 14px;
 }
+.servico-info ul {
+    margin-bottom: 20px;
+    color: #5e2327;
+    font-size: 1.09rem;
+    padding-left: 18px;
+}
+.servico-info li {
+    margin-bottom: 7px;
+}
 .btn-servico {
-    display: inline-block;
-    background: linear-gradient(90deg, #872d34 70%, #5e2327 100%);
+    background: #872d34;
     color: #fff;
-    padding: 14px 42px;
+    padding: 14px 36px;
     border-radius: 22px;
     font-weight: 700;
-    font-size: 1.05rem;
+    font-size: 1.09rem;
     text-decoration: none;
-    margin: 18px 0 16px 0;
+    margin-top: 10px;
     box-shadow: 0 1px 10px #872d3430;
     transition: background 0.2s, transform 0.18s;
+    display: inline-block;
 }
 .btn-servico:hover {
-    background: linear-gradient(90deg, #700F1C 80%, #872d34 100%);
-    color: #fff;
-    transform: scale(1.05) translateY(-2px);
-}
-.servico-conteudo h2 {
-    font-size: 1.18rem;
-    margin-top: 22px;
-    margin-bottom: 12px;
-    color: #872d34;
-}
-.servico-conteudo ul,
-.servico-conteudo ol {
-    margin-left: 24px;
-    font-size: 1.06rem;
-}
-.servico-conteudo li {
-    margin-bottom: 6px;
-}
-@media (max-width: 950px) {
-    .container-servico {
-        flex-direction: column;
-        gap: 26px;
-        padding: 24px 2vw;
-    }
-    .servico-imagem img {
-        max-width: 100%;
-    }
-}
-footer {
-    text-align: center;
-    padding: 24px 0 12px 0;
-    color: #fff7;
-    font-size: 1rem;
+    background: #700f1c;
+    color: #ffd86a;
+    transform: scale(1.05);
 }
 
-.logo-servico-img {
-    max-height: 110px;
-    transition: height 0.2s;
-    margin-bottom: 0;       /* Remove espaço abaixo */
-    margin-left: -100px;
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0 12px 0;
+    color: #fff7;
+    font-size: 1rem;
+    background: transparent;
+}
+
+/* Responsivo */
+@media (max-width: 950px) {
+    .servico-container {
+        flex-direction: column;
+        gap: 24px;
+        padding: 18px 2vw;
+    }
+    .servico-img img {
+        width: 98vw;
+        max-width: 360px;
+    }
+    .header-servico {
+        flex-direction: column;
+        gap: 12px;
+    }
 }
