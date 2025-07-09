@@ -40,11 +40,6 @@ body {
 }
 
 /* Serviço */
-.servico-bg {
-    background: #fff6f7;
-    min-height: 100vh;
-    padding: 50px 0 40px 0;
-}
 .servico-container {
     background: #fff;
     border-radius: 28px;
@@ -57,15 +52,36 @@ body {
     padding: 40px;
     align-items: center;
 }
+.servico-imagem {
+    flex: 0 0 320px;
+}
 .servico-imagem img {
-    max-width: 360px;
+    width: 320px;
+    max-width: 100%;
     border-radius: 20px;
     box-shadow: 0 3px 16px #24040a18;
+    display: block;
 }
 .servico-info {
     flex: 1;
     color: #872d34;
+    min-width: 0;
 }
+@media (max-width: 900px) {
+    .servico-container {
+        flex-direction: column;
+        gap: 24px;
+        padding: 18px 2vw;
+        align-items: flex-start;
+    }
+    .servico-imagem, .servico-imagem img {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+
 .servico-info h1 {
     font-family: 'Playfair Display', serif;
     color: #872d34;
@@ -110,11 +126,63 @@ body {
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px 0 12px 0;
+    padding: 24px 0 12px 0;
     color: #fff7;
     font-size: 1rem;
+}
+.footer-bottom {
+    border-top: 1px solid #fff2;
+    padding: 15px 0 8px 0;
+    color: #E5E5E5;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 16px;
     background: transparent;
 }
+
+.footer-icone {
+    height: 22px;
+    width: 22px;
+    margin-right: 7px;
+    vertical-align: middle;
+    filter: brightness(1.2);
+}
+
+.footer-btn {
+    display: inline-block;
+    background: #525150;
+    padding: 9px 10px;      /* Botão menor */
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.footer-btn:hover {
+    color: #5e2327;
+    transform: scale(1.06);
+}
+
+.footer-bottom {
+    border-top: 1px solid #fff2;
+    padding: 15px 0 8px 0;
+    color: #E5E5E5;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 16px;
+    background: transparent;
+}
+@media (max-width: 650px) {
+    .footer-icone {
+        width: 30px;
+        height: 30px;
+        margin: 0 6px;
+    }
+    .footer-content {
+        padding-bottom: 8px;
+    }
+}
+
 
 /* Responsivo */
 @media (max-width: 950px) {
