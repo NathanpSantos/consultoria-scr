@@ -123,6 +123,49 @@ body {
     transform: scale(1.05);
 }
 
+.menu-servicos {
+    position: relative;
+}
+.menu-servicos .submenu-servicos {
+    display: none;
+    position: absolute;
+    background: #b4b4b4;
+    min-width: 220px;
+    box-shadow: 0 4px 18px #24040a23;
+    padding: 14px 0;
+    border-radius: 12px;
+    z-index: 10;
+    top: 100%;
+    left: 0;
+}
+.menu-servicos:hover .submenu-servicos,
+.menu-servicos:focus-within .submenu-servicos {
+    display: block;
+}
+.submenu-servicos li {
+    margin: 0;
+    padding: 0;
+}
+.submenu-servicos a {
+    color: #872d34;
+    padding: 12px 22px;
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.01rem;
+    border-radius: 6px;
+    transition: background 0.16s, color 0.16s;
+}
+.submenu-servicos a:hover {
+    background: #fdfdfd;
+    color: #5e2327;
+}
+.menu-servicos > a::after {
+    font-size: 0.7em;
+    margin-left: 7px;
+    vertical-align: middle;
+}
+
 /* Footer */
 footer {
     text-align: center;
