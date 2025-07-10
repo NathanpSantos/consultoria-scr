@@ -3,19 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Serviços | SC Strategy Consulting Brasil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ajuste o caminho do CSS conforme a estrutura da sua pasta -->
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo"><a href="index.html"><img src="img/logo.png" alt="SC Strategy Consulting"></a></div>
-            <nav>
-                <ul>
+     <header class="header-impacto">
+        <div class="header-top">
+            <div class="logo-central">
+                <img src="img/logo.png" alt="SC Strategy Consulting">
+            </div>
+            <nav class="nav-central">
+                <ul class="menu-lista">
                     <li><a href="index.html">Início</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="servicos.html" class="active">Serviços</a></li>
+                    <li class="menu-servicos">
+                        <a href="#">Serviços</a>
+                    <ul class="submenu-servicos">
+                            <li><a href="servicos/servicos-estrategia.html">Estratégia de Negócios</a></li>
+                            <li><a href="servicos/servicos-marketing.html">Marketing</a></li>
+                            <li><a href="servicos/servicos-midias.html">Mídias Sociais</a></li>
+                            <li><a href="servicos/servicos-growth.html">Growth</a></li>
+                            <li><a href="servicos/servicos-inteligencia.html">Inteligência de Mercado</a></li>
+                            <li><a href="servicos/servicos-pesquisa.html">Pesquisa</a></li>
+                            <li><a href="servicos/comunicacao-corporativa.html">Comunicação Corporativa</a></li>   
+                        </ul>
+                    </li>
                     <li><a href="cases.html">Cases</a></li>
                     <li><a href="conteudo.html">Conteúdo</a></li>
                     <li><a href="contato.html">Contato</a></li>
@@ -23,48 +38,37 @@
             </nav>
         </div>
     </header>
-    <section class="fundo-branco">
+    <main>
         <div class="container">
-            <h2>Serviços de Consultoria</h2>
-            <div class="servicos-lista">
-                <div class="servico-item">
-                    <h3>Diagnóstico de Marketing</h3>
-                    <p>Análise completa do seu negócio e recomendações estratégicas para crescer com segurança.</p>
+            <section class="servicos-centro">
+                <h1>Serviços de Consultoria</h1>
+                <div class="servicos-lista">
+                    <h2>Estratégia de Negócios</h2>
+                    <p>Desenvolvimento de planos estratégicos personalizados para acelerar o crescimento da sua empresa. Diagnóstico completo, definição de metas, oportunidades e direcionamento para resultados concretos.</p>
+                    <h2>Marketing</h2>
+                    <p>Elaboração de estratégias de marketing digital e tradicional para posicionar sua marca no mercado, aumentar a visibilidade e gerar resultados consistentes. Ações que unem criatividade e análise de dados.</p>
+                    <h2>Mídias Sociais</h2>
+                    <p>Gestão profissional das redes sociais para fortalecer sua presença digital. Planejamento de conteúdo, campanhas, análise de desempenho e interação estratégica para engajar o público.</p>
+                    <h2>Growth</h2>
+                    <p>Estratégias de crescimento focadas em escalar resultados. Aplicação de metodologias inovadoras para identificar oportunidades, aumentar receita e acelerar o desenvolvimento do negócio.</p>
+                    <h2>Inteligência de Mercado</h2>
+                    <p>Coleta e análise de dados do setor, concorrentes e tendências para embasar decisões estratégicas. Relatórios personalizados para identificar riscos, oportunidades e antecipar movimentos do mercado.</p>
+                    <h2>Pesquisa</h2>
+                    <p>Pesquisas de mercado, opinião e satisfação para entender melhor o seu público, mapear necessidades, avaliar concorrentes e identificar novas oportunidades de atuação.</p>
+                    <h2>Comunicação Corporativa</h2>
+                    <p>Desenvolvimento de estratégias de comunicação interna e externa para fortalecer a imagem institucional. Alinhamento de mensagens, relacionamento com stakeholders e gestão de crises.</p>       
                 </div>
-                <div class="servico-item">
-                    <h3>Planejamento Estratégico</h3>
-                    <p>Definição de metas e estratégias práticas para impulsionar sua empresa.</p>
-                </div>
-                <div class="servico-item">
-                    <h3>Consultoria em Vendas</h3>
-                    <p>Técnicas e ações para aumentar conversão e fidelização de clientes.</p>
-                </div>
-                <div class="servico-item">
-                    <h3>Treinamento de Equipes</h3>
-                    <p>Capacitação de times de vendas e marketing com metodologia hands-on.</p>
-                </div>
-                <div class="servico-item">
-                    <h3>Mentoria para Pequenos Negócios</h3>
-                    <p>Orientação contínua para quem está começando e quer se destacar.</p>
-                </div>
-            </div>
-            <div style="text-align:center;margin-top:35px;">
-                <a href="contato.html" class="cta">Solicite um orçamento</a>
-            </div>
+                <a href="contato.html" class="btn-contato">Fale com um Especialista</a>
+            </section>
         </div>
-    </section>
+    </main>
+
     <footer>
-        <div class="footer-content">
-            <div class="footer-bottom">
-                © 2025 SC Strategy Consulting Brasil. Todos os direitos reservados.
-            </div>
-            <div class="footer-icons">
-                <a href="https://www.linkedin.com/company/strategy-consulting-brasil/posts/?feedView=all" target="_blank" title="LinkedIn">
-                    <img src="../img/linkedin.png" alt="LinkedIn" class="footer-icone" />
-                </a>
-                <a href="mailto:strategyconsultingbrasil@gmail.com" target="_blank" title="E-mail">
-                    <img src="../img/email.png" alt="E-mail" class="footer-icone" />
-                </a>
+        <div class="footer-bottom">
+            <span>© 2025 SC Strategy Consulting Brasil. Todos os direitos reservados.</span>
+            <div class="redes">
+                <a href="mailto:strategyconsultingbrasil@gmail.com" title="E-mail"><img src="img/email.png" alt="E-mail"></a>
+                <a href="https://www.linkedin.com/company/strategy-consulting-brasil/posts/?feedView=all" target="_blank" title="LinkedIn"><img src="img/linkedin.png" alt="LinkedIn"></a>
             </div>
         </div>
     </footer>

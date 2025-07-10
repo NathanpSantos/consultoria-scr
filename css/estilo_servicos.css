@@ -1,0 +1,87 @@
+body {
+    background: #872d34;
+    color: #fff;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-header {
+    display: block;
+    margin: 0 auto 30px auto;
+    height: 64px;
+}
+
+.menu-lista {
+    list-style: none;
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 32px;
+}
+
+.menu-lista li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.09rem;
+    padding: 8px 20px;
+    border-radius: 14px;
+    transition: background 0.17s, color 0.17s;
+}
+.menu-lista li a:hover,
+.menu-lista li a.active {
+    background: #fff;
+    color: #872d34;
+}
+
+.servicos h1 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+    color: #fff;
+    text-align: center;
+}
+.servicos h2 {
+    font-size: 1.2rem;
+    margin: 18px 0 6px 0;
+    color: #ffd86a;
+}
+.servicos p {
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.btn-contato {
+    margin: 28px auto 0 auto;
+    background: #fff;
+    color: #872d34;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    padding: 14px 40px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 16px #0002;
+    transition: background 0.15s, color 0.15s;
+    display: block;
+}
+.btn-contato:hover {
+    background: #ffd86a;
+    color: #872d34;
+}
+
+footer {
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 26px 0 14px 0;
+    font-size: 1rem;
+}
