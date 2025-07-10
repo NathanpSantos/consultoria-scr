@@ -1024,6 +1024,33 @@ body {
   padding: 42px 38px;
   gap: 48px;
 }
+
+.quem-somos-img {
+  flex: 0 0 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quem-somos-img img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #872d3410;
+}
+
+@media (max-width: 900px) {
+  .quem-somos-container {
+    flex-direction: column;
+    gap: 22px;
+    padding: 16px 8px;
+  }
+  .quem-somos-img img {
+    max-width: 90vw;
+    margin-bottom: 8px;
+  }
+}
+
 .quem-somos-conteudo {
   flex: 1;
   color: #872d34; /* Cor vinho escuro, igual aos cards */
@@ -1511,5 +1538,129 @@ body {
     .contato-side-img {
         justify-content: center;
         margin-bottom: 18px;
+    }
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #872d34;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* Centraliza o main na tela, ocupa altura máxima possível */
+main {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 36px 24px 0 24px;
+}
+
+.servicos-centro {
+    background: none;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+.servicos-lista {
+    margin-bottom: 22px;
+}
+.servicos-centro h1 {
+    font-size: 2.1rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 16px;
+    color: #fff;
+}
+.servicos-lista h2 {
+    font-size: 1.21rem;
+    margin: 16px 0 2px 0;
+    color: #fff;
+}
+.servicos-lista p {
+    color: #ffeaea;
+    margin: 0 0 5px 0;
+}
+
+.btn-contato {
+    display: inline-block;
+    margin: 32px 0 0 0;
+    background: #fff;
+    color: #872d34;
+    font-weight: bold;
+    padding: 14px 36px;
+    border-radius: 28px;
+    border: none;
+    font-size: 1.08rem;
+    text-decoration: none;
+    transition: background 0.22s, color 0.22s, transform 0.18s;
+    cursor: pointer;
+    box-shadow: 0 1px 8px #872d3430;
+}
+.btn-contato:hover {
+    background: #ffd2dd;
+    color: #872d34;
+    transform: scale(1.04);
+}
+
+/* FOOTER sempre no final */
+footer {
+    flex-shrink: 0;
+    background: #7d2432;
+    padding: 16px 0 10px 0;
+    text-align: center;
+    color: #fff;
+    border-top: 1px solid #fff1;
+}
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+.redes {
+    margin-top: 5px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+.redes img {
+    height: 28px;
+    width: 28px;
+    transition: transform 0.16s, filter 0.16s;
+}
+.redes img:hover {
+    transform: scale(1.12);
+    filter: brightness(1.16);
+}
+
+@media (max-width: 650px) {
+    .container { padding: 18px 4vw 0 4vw; }
+    .servicos-centro h1 { font-size: 1.2rem; }
+    .servicos-lista h2 { font-size: 1.03rem; }
+    .btn-contato { font-size: 0.98rem; padding: 12px 24px; }
+}
+
+@media (max-width: 700px) {
+    .header-servico nav ul {
+        gap: 6px;
+        font-size: 0.97rem;
+        flex-wrap: wrap;
+    }
+    .logo-servico-img {
+        max-height: 64px;
     }
 }
