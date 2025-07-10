@@ -1647,6 +1647,22 @@ footer {
     filter: brightness(1.16);
 }
 
+.conteudo-bg, .conteudo-container, .timeline-cards, .timeline-item, .timeline-content {
+  overflow: visible !important;
+  height: auto !important;
+}
+
+.depoimentos {
+  position: relative !important;
+  z-index: 2 !important;
+  margin-top: 40px !important;
+  background: #fff !important;
+}
+
+.timeline-cards::before {
+  z-index: 0 !important;
+}
+
 /* ======= RESPONSIVIDADE GERAL ======= */
 
 /* Ajusta container e paddings gerais */
