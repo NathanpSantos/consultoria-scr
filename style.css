@@ -751,35 +751,60 @@ main {
 
 @media (max-width: 700px) {
   .header-top {
-    flex-direction: column;
-    gap: 6px;
-    padding: 0 2vw;
-    min-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw 0 5vw;
+    min-height: 50px;
+    background: #872d34;
+    position: relative;
+    gap: 0;
   }
-
-  .logo-central img {
-    height: 40px !important; /* Reduza o tamanho da logo */
-    margin-left: 0;
+  .header-top-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
-  .header-social img {
-    height: 22px;
-    margin-left: 2px;
+  .logo-central {
+    height: 44px !important;
+    margin: 0 auto !important;
+    display: block;
   }
-
+  .header-top-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 60px;
+  }
+  .header-top-icons img {
+    height: 26px !important;
+    width: 26px !important;
+    margin: 0 !important;
+    display: block;
+  }
+  /* Alinhe o menu em linha, não coluna */
   .menu-principal ul {
+    display: flex !important;
+    flex-direction: row !important;
     flex-wrap: wrap;
-    gap: 6px;
-    font-size: 0.97rem;
-    padding: 8px 0 2px 0;
+    gap: 8px !important;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0 2px 0 !important;
   }
-
+  .menu-principal li {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
   .menu-principal a {
-    font-size: 0.97rem;
-    padding: 6px 7px;
-    border-radius: 12px;
+    font-size: 0.99rem !important;
+    padding: 6px 10px !important;
+    border-radius: 13px !important;
   }
 }
+
 @media (max-width: 1200px) {
     .header-top {
         padding: 0 4vw;
