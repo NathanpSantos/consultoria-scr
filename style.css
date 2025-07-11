@@ -749,15 +749,18 @@ main {
 
 /* Responsivo */
 
+/* HEADER MOBILE AJUSTADO */
 @media (max-width: 700px) {
   .header-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5vw 0 5vw;
-    min-height: 50px;
+    padding: 0 14px;
+    min-height: 56px;
     background: #872d34;
+    border-bottom: 1px solid #fff1;
     position: relative;
+    z-index: 20;
     gap: 0;
   }
   .header-top-left {
@@ -765,45 +768,82 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 0;
   }
-  .logo-central {
-    height: 44px !important;
-    margin: 0 auto !important;
+  .header-top-left img {
+    max-width: 96px;
+    height: 42px;
     display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    padding: 0;
   }
   .header-top-icons {
     display: flex;
-    gap: 10px;
+    gap: 8px;
     align-items: center;
     justify-content: flex-end;
     min-width: 60px;
   }
-  .header-top-icons img {
-    height: 26px !important;
-    width: 26px !important;
-    margin: 0 !important;
-    display: block;
+  .header-top-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  /* Alinhe o menu em linha, não coluna */
+  .header-top-icons img {
+    height: 28px !important;
+    width: 28px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block;
+    border-radius: 7px;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  /* MENU: linha só, NUNCA coluna! */
   .menu-principal ul {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: wrap;
-    gap: 8px !important;
+    gap: 6px !important;
     justify-content: center;
     align-items: center;
-    padding: 8px 0 2px 0 !important;
+    padding: 10px 0 4px 0 !important;
+    margin: 0 auto !important;
+    background: #491b1d;
+    border-radius: 0 0 22px 22px;
+    width: 100%;
   }
   .menu-principal li {
     margin: 0 !important;
     padding: 0 !important;
   }
-  .menu-principal a {
-    font-size: 0.99rem !important;
-    padding: 6px 10px !important;
-    border-radius: 13px !important;
+  .menu-principal a,
+  .menu-principal a.ativo {
+    font-size: 1.01rem !important;
+    padding: 7px 10px !important;
+    border-radius: 11px !important;
+    background: transparent !important;
+    color: #fff !important;
+    transition: background 0.15s, color 0.15s;
+  }
+  .menu-principal a:hover, .menu-principal .active {
+    background: #6b353a !important;
+    color: #fff !important;
+  }
+
+  /* Ajusta submenus (abre por cima, não empurra tudo) */
+  .submenu-servicos {
+    position: absolute;
+    left: 0;
+    top: 42px;
+    min-width: 170px;
+    z-index: 20;
+    box-shadow: 0 2px 10px #872d3430;
   }
 }
+
 
 @media (max-width: 1200px) {
     .header-top {
