@@ -799,7 +799,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 2px;
-    padding: 7px 0 0 0;
+    padding: 7px 8px;
     width: max-content;       /* faz o ul ter largura suficiente */
     min-width: 100vw;        
     }
