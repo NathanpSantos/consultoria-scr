@@ -792,29 +792,41 @@ main {
         margin: 0 !important;
     }
 
+    .menu-principal {
+        width: 100vw;
+        overflow-x: auto;
+        background: rgba(61,22,24,0.97);
+    }
+
     .menu-principal ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap; /* NÃO deixa quebrar linha */
-    justify-content: center;
-    align-items: center;
-    gap: 2px;
-    padding: 7px 8px;
-    width: max-content;       /* faz o ul ter largura suficiente */
-    min-width: 100vw;        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: center;
+        width: max-content;
+        min-width: 100vw;
+        padding: 7px 16px;
+        margin: 0;
+        overflow-x: auto;
+        -ms-overflow-style: none;      /* IE 10+ */
     }
-
+    .menu-principal ul::-webkit-scrollbar {
+        display: none;                 /* Chrome/Safari */
+    }
     .menu-principal li {
-        flex: 1 1 auto;       /* Ocupa espaço igual, fica reto */
-        text-align: center;   /* Centraliza o texto */
+        flex: 0 0 auto;                /* NÃO deixa esticar! */
+        text-align: center;
+    }
+    .menu-principal a {
+        font-size: 1rem;
+        padding: 10px 14px;
+        border-radius: 8px;
+        white-space: nowrap;           /* NÃO quebra linhas */
+        display: block;
     }
 
-    .menu-principal a {
-        font-size: 0.99rem !important;
-        padding: 10px 0 !important;
-        min-width: 70px;
-        border-radius: 8px;
-    }
 
     .submenu-servicos {
     min-width: 90vw !important;
