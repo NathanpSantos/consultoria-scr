@@ -798,10 +798,10 @@ main {
     flex-wrap: nowrap; /* NÃO deixa quebrar linha */
     justify-content: center;
     align-items: center;
-    gap: 6px;
+    gap: 2px;
     padding: 7px 0 0 0;
-    width: 100vw; /* Ocupa a largura inteira */
-    overflow-x: auto; /* Faz rolar se for muitos itens */
+    width: max-content;       /* faz o ul ter largura suficiente */
+    min-width: 100vw;        
     }
 
     .menu-principal li {
