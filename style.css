@@ -33,6 +33,25 @@ main {
     padding: 0 20px;
 }
 
+.header-top-left img {
+    height: 90px;         /* ajuste o tamanho conforme necessário */
+    margin: 0;
+    display: block;
+}
+
+.header-top-icons img {
+    height: 36px;         /* ajuste para um tamanho ideal, tipo 28~36px */
+    width: auto;
+    margin: 0 8px;
+    transition: filter 0.2s, transform 0.2s;
+}
+.header-top-icons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+
 .header-impacto {
     box-shadow: 0 2px 16px rgba(61,22,24,0.10);
     top: 0;
