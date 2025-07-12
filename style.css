@@ -774,28 +774,35 @@ main {
     }
 
     .menu-principal ul {
-        flex-wrap: wrap;
-        gap: 10px;
-        font-size: 1rem;
-        justify-content: center;
-        padding: 7px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; /* NÃO deixa quebrar linha */
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 0 0 0;
+    width: 100vw; /* Ocupa a largura inteira */
+    overflow-x: auto; /* Faz rolar se for muitos itens */
     }
-    .menu-principal li, .menu-principal a {
-        padding: 0 !important;
-        margin: 0 !important;
-        font-size: 0.97rem !important;
+
+    .menu-principal li {
+        flex: 1 1 auto;       /* Ocupa espaço igual, fica reto */
+        text-align: center;   /* Centraliza o texto */
     }
-    .menu-principal {
-        padding: 0 !important;
+
+    .menu-principal a {
+        font-size: 0.99rem !important;
+        padding: 10px 0 !important;
+        min-width: 70px;
+        border-radius: 8px;
     }
 
     .submenu-servicos {
-        min-width: 90vw !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-        top: 110% !important;
-        font-size: 1.04rem !important;
-    }
+    min-width: 90vw !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: 100% !important;
+  }
 }
 
 
