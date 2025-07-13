@@ -895,6 +895,11 @@ main {
         margin-bottom: 32px;
     }
 }
+@media (max-width: 400px) {
+  .hero-content h1 {
+    font-size: 0.85rem;
+  }
+}
 
 @media (max-width: 700px) {
   .header-hero {
@@ -902,7 +907,7 @@ main {
     padding: 0 6vw;
   }
   .hero-content h1 {
-    font-size: 1.15rem;
+    font-size: 1rem;
     margin-bottom: 6px;
   }
   .cta {
